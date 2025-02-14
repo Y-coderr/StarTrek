@@ -1,70 +1,38 @@
-import { NextRequest, NextResponse } from "next/server";
-import formidable from "formidable";
-import fs from "fs";
-import path from "path";
-import { Readable } from "stream";
+// app/api/process-audio/route.js
+import { mkdir } from "fs/promises";
+import { writeFile } from "fs/promises";
+import { join } from "path";
+import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic"; // Ensure API route is dynamic
-export const config = { api: { bodyParser: false } }; // Disable built-in body parser
-
-export async function POST(req: NextRequest) {
+export async function POST(req) {
   try {
-    if (req.method !== "POST") {
-      return NextResponse.json(
-        { error: "Method not allowed" },
-        { status: 405 }
-      );
+    // Create audio directory if it doesn't exist
+    const audioDir = join(process.cwd(), "public", "audio");
+    try {
+      await mkdir(audioDir, { recursive: true });
+    } catch (err) {
+      if (err.code !== "EEXIST") throw err;
     }
 
-    // Convert request body into a readable stream
-    const stream = Readable.from(req.body as any);
+    const data = await req.blob();
+    const fileName = `audio_${Date.now()}.webm`;
+    const audioPath = join(audioDir, fileName);
 
-    // Ensure upload directory exists
-    const uploadDir = path.join(process.cwd(), "public/uploads");
-    if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
+    // Convert blob to buffer and save
+    const buffer = Buffer.from(await data.arrayBuffer());
+    await writeFile(audioPath, buffer);
 
-    // Initialize formidable with upload directory
-    const form = formidable({ multiples: false, uploadDir });
-
-    // Parse the form data from the stream
-    const parseForm = () =>
-      new Promise<{ fields: formidable.Fields; files: formidable.Files }>(
-        (resolve, reject) => {
-          form.parse(stream, (err, fields, files) => {
-            if (err) reject(err);
-            else resolve({ fields, files });
-          });
-        }
-      );
-
-    const { files } = await parseForm();
-
-    if (!files.audio) {
-      return NextResponse.json(
-        { error: "No audio file uploaded" },
-        { status: 400 }
-      );
-    }
-
-    // Get uploaded file path
-    const audioFile = files.audio as formidable.File;
-    const tempPath = audioFile.filepath;
-    const newFilePath = path.join(
-      uploadDir,
-      audioFile.originalFilename || "uploaded_audio.mp3"
-    );
-
-    // Move file to permanent location
-    fs.renameSync(tempPath, newFilePath);
-
+    // Here you would add your audio-to-text processing
+    // For now, returning a mock response
     return NextResponse.json({
-      message: "Audio uploaded successfully!",
-      filePath: newFilePath,
+      success: true,
+      path: `/audio/${fileName}`,
+      text: "Sample transcribed text", // Replace with actual transcription
     });
   } catch (error) {
     console.error("Error processing audio:", error);
     return NextResponse.json(
-      { error: "Error processing audio file" },
+      { error: "Error processing audio" },
       { status: 500 }
     );
   }
