@@ -22,12 +22,9 @@ export async function POST(req) {
     const buffer = Buffer.from(await data.arrayBuffer());
     await writeFile(audioPath, buffer);
 
-    // Here you would add your audio-to-text processing
-    // For now, returning a mock response
     return NextResponse.json({
       success: true,
       path: `/audio/${fileName}`,
-      text: "Sample transcribed text", // Replace with actual transcription
     });
   } catch (error) {
     console.error("Error processing audio:", error);
