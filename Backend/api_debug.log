@@ -1,0 +1,168 @@
+2025-02-16 18:15:10,721 - INFO - Environment variables loaded
+2025-02-16 18:15:10,724 - INFO - Starting Flask application
+2025-02-16 18:15:10,757 - WARNING -  * Debugger is active!
+2025-02-16 18:15:10,761 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:15:31,481 - INFO - 127.0.0.1 - - [16/Feb/2025 18:15:31] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:15:31,743 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:15:31,744 - DEBUG - Generating OTP for Aadhaar: 9420****2432
+2025-02-16 18:15:31,745 - DEBUG - Making API request to: https://api.sandbox.co.in/kyc/aadhaar/okyc/otp
+2025-02-16 18:15:31,749 - DEBUG - Request payload: {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.request', 'aadhaar_number': '942058342432', 'consent': 'Y', 'reason': 'For KYC'}
+2025-02-16 18:15:31,750 - DEBUG - Headers generated: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0'}
+2025-02-16 18:15:31,766 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:15:48,394 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/otp HTTP/1.1" 200 217
+2025-02-16 18:15:48,395 - DEBUG - API Response Status: 200
+2025-02-16 18:15:48,396 - DEBUG - API Response: {'timestamp': 1739709936071, 'transaction_id': '0a0ef450-7839-42e1-9747-db2568d4c516', 'data': {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.response', 'reference_id': 30747330, 'message': 'OTP sent successfully'}, 'code': 200}
+2025-02-16 18:15:48,397 - INFO - OTP generated successfully
+2025-02-16 18:15:48,402 - INFO - 127.0.0.1 - - [16/Feb/2025 18:15:48] "POST /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:16:06,674 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:06] "OPTIONS /api/aadhaar/verify-otp HTTP/1.1" 200 -
+2025-02-16 18:16:06,990 - INFO - Received request to verify Aadhaar OTP
+2025-02-16 18:16:06,990 - ERROR - Missing required fields: reference_id or OTP
+2025-02-16 18:16:06,992 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:06] "[31m[1mPOST /api/aadhaar/verify-otp HTTP/1.1[0m" 400 -
+2025-02-16 18:18:24,222 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:24] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:18:24,485 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:18:24,486 - DEBUG - Generating OTP for Aadhaar: 9420****2432
+2025-02-16 18:18:24,487 - DEBUG - Making API request to: https://api.sandbox.co.in/kyc/aadhaar/okyc/otp
+2025-02-16 18:18:24,487 - DEBUG - Request payload: {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.request', 'aadhaar_number': '942058342432', 'consent': 'Y', 'reason': 'For KYC'}
+2025-02-16 18:18:24,488 - DEBUG - Headers generated: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0'}
+2025-02-16 18:18:24,496 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:18:27,114 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/otp HTTP/1.1" 200 217
+2025-02-16 18:18:27,117 - DEBUG - API Response Status: 200
+2025-02-16 18:18:27,118 - DEBUG - API Response: {'timestamp': 1739710108316, 'transaction_id': '8663a123-1e45-4953-8b9a-8f28f578a578', 'data': {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.response', 'reference_id': 30747487, 'message': 'OTP sent successfully'}, 'code': 200}
+2025-02-16 18:18:27,120 - INFO - OTP generated successfully
+2025-02-16 18:18:27,123 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:27] "POST /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:21:56,861 - INFO -  * Detected change in 'C:\\Users\\gurup\\Downloads\\StarTrek\\StarTrek-main\\Backend\\server.py', reloading
+2025-02-16 18:26:58,976 - INFO - Environment variables loaded
+2025-02-16 18:26:58,978 - INFO - Starting Flask application
+2025-02-16 18:27:11,099 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.5.229:5000
+2025-02-16 18:27:11,101 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 18:27:11,106 - INFO -  * Restarting with stat
+2025-02-16 18:27:12,130 - INFO - Environment variables loaded
+2025-02-16 18:27:12,135 - INFO - Starting Flask application
+2025-02-16 18:27:12,194 - WARNING -  * Debugger is active!
+2025-02-16 18:27:12,202 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:27:55,101 - INFO - 127.0.0.1 - - [16/Feb/2025 18:27:55] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:27:55,355 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:27:55,356 - DEBUG - Generating OTP for Aadhaar: 9420****2432
+2025-02-16 18:27:55,356 - DEBUG - Making API request to: https://api.sandbox.co.in/kyc/aadhaar/okyc/otp
+2025-02-16 18:27:55,357 - DEBUG - Request payload: {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.request', 'aadhaar_number': '942058342432', 'consent': 'Y', 'reason': 'For KYC'}
+2025-02-16 18:27:55,359 - DEBUG - Headers generated: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0'}
+2025-02-16 18:27:55,373 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:28:08,952 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/otp HTTP/1.1" 200 217
+2025-02-16 18:28:08,954 - DEBUG - API Response Status: 200
+2025-02-16 18:28:08,955 - DEBUG - API Response: {'timestamp': 1739710690051, 'transaction_id': 'cfec753a-fe25-4736-a648-6e22ffc224da', 'data': {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.response', 'reference_id': 30748072, 'message': 'OTP sent successfully'}, 'code': 200}
+2025-02-16 18:28:08,957 - INFO - OTP generated successfully
+2025-02-16 18:28:08,961 - INFO - 127.0.0.1 - - [16/Feb/2025 18:28:08] "POST /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:28:22,954 - INFO - 127.0.0.1 - - [16/Feb/2025 18:28:22] "OPTIONS /api/aadhaar/verify-otp HTTP/1.1" 200 -
+2025-02-16 18:28:23,270 - INFO - Received request to verify Aadhaar OTP
+2025-02-16 18:28:23,271 - DEBUG - Verifying OTP for reference_id: 30748072
+2025-02-16 18:28:23,272 - DEBUG - Making API request to: https://api.sandbox.co.in/kyc/aadhaar/okyc/verify
+2025-02-16 18:28:23,273 - DEBUG - Request payload: {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.request', 'reference_id': 30748072, 'otp': '467322'}
+2025-02-16 18:28:23,274 - DEBUG - Headers generated: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0'}
+2025-02-16 18:28:23,281 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:28:24,517 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/verify HTTP/1.1" 400 485
+2025-02-16 18:28:24,522 - DEBUG - API Response Status: 400
+2025-02-16 18:28:24,523 - DEBUG - API Response: {'code': 400, 'message': "Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=60jbR2j36dLjUOZgvV0+il1hmMG3yBEl11s0a88c3b8=", 'timestamp': 1739710706852, 'transaction_id': '88a26f90-7f32-4651-aab6-f63add5d7f74'}
+2025-02-16 18:28:24,525 - ERROR - API error: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=60jbR2j36dLjUOZgvV0+il1hmMG3yBEl11s0a88c3b8=
+2025-02-16 18:28:24,530 - INFO - 127.0.0.1 - - [16/Feb/2025 18:28:24] "[31m[1mPOST /api/aadhaar/verify-otp HTTP/1.1[0m" 400 -
+2025-02-16 18:38:30,670 - INFO -  * Detected change in 'C:\\Users\\gurup\\Downloads\\StarTrek\\StarTrek-main\\Backend\\server.py', reloading
+2025-02-16 18:38:30,722 - INFO -  * Restarting with stat
+2025-02-16 18:38:31,161 - INFO - Environment variables loaded
+2025-02-16 18:38:31,163 - INFO - Starting Flask application
+2025-02-16 18:38:31,182 - WARNING -  * Debugger is active!
+2025-02-16 18:38:31,185 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:38:31,350 - INFO -  * Detected change in 'C:\\Users\\gurup\\Downloads\\StarTrek\\StarTrek-main\\Backend\\server.py', reloading
+2025-02-16 18:38:31,389 - INFO -  * Restarting with stat
+2025-02-16 18:38:31,860 - INFO - Environment variables loaded
+2025-02-16 18:38:31,862 - INFO - Starting Flask application
+2025-02-16 18:38:31,883 - WARNING -  * Debugger is active!
+2025-02-16 18:38:31,887 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:38:47,183 - INFO - 127.0.0.1 - - [16/Feb/2025 18:38:47] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:38:47,428 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:38:47,429 - ERROR - Exception occurred: 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "C:\Users\gurup\Downloads\StarTrek\StarTrek-main\Backend\server.py", line 88, in generate_otp
+    headers = generate_auth_headers("POST", "/kyc/aadhaar/okyc/otp", payload)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gurup\Downloads\StarTrek\StarTrek-main\Backend\server.py", line 50, in generate_auth_headers
+    SANDBOX_API_SECRET.encode(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'encode'
+2025-02-16 18:38:47,433 - INFO - 127.0.0.1 - - [16/Feb/2025 18:38:47] "[35m[1mPOST /api/aadhaar/generate-otp HTTP/1.1[0m" 500 -
+2025-02-16 18:39:14,180 - INFO -  * Detected change in 'C:\\Users\\gurup\\Downloads\\StarTrek\\StarTrek-main\\Backend\\server.py', reloading
+2025-02-16 18:39:14,287 - INFO -  * Restarting with stat
+2025-02-16 18:39:14,880 - INFO - Environment variables loaded
+2025-02-16 18:39:14,883 - INFO - Starting Flask application
+2025-02-16 18:39:14,921 - WARNING -  * Debugger is active!
+2025-02-16 18:39:14,927 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:41:02,144 - INFO -  * Detected change in 'C:\\Users\\gurup\\Downloads\\StarTrek\\StarTrek-main\\Backend\\server.py', reloading
+2025-02-16 18:41:02,244 - INFO -  * Restarting with stat
+2025-02-16 18:41:02,941 - INFO - Environment variables loaded
+2025-02-16 18:41:02,943 - INFO - Starting Flask application
+2025-02-16 18:41:02,974 - WARNING -  * Debugger is active!
+2025-02-16 18:41:02,982 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:41:15,435 - INFO - 127.0.0.1 - - [16/Feb/2025 18:41:15] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:41:15,684 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:41:15,685 - DEBUG - Generating OTP for Aadhaar: 9420****2432
+2025-02-16 18:41:15,686 - DEBUG - Making API request to: https://api.sandbox.co.in/kyc/aadhaar/okyc/otp
+2025-02-16 18:41:15,687 - DEBUG - Request payload: {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.request', 'aadhaar_number': '942058342432', 'consent': 'Y', 'reason': 'For KYC'}
+2025-02-16 18:41:15,688 - DEBUG - Headers generated: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0'}
+2025-02-16 18:41:15,702 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:41:29,209 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/otp HTTP/1.1" 200 217
+2025-02-16 18:41:29,212 - DEBUG - API Response Status: 200
+2025-02-16 18:41:29,212 - DEBUG - API Response: {'timestamp': 1739711479561, 'transaction_id': '91d4dedd-a052-4ac1-bb7d-951ea0d45f81', 'data': {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.otp.response', 'reference_id': 30749010, 'message': 'OTP sent successfully'}, 'code': 200}
+2025-02-16 18:41:29,213 - INFO - OTP generated successfully
+2025-02-16 18:41:29,217 - INFO - 127.0.0.1 - - [16/Feb/2025 18:41:29] "POST /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:41:42,667 - INFO - 127.0.0.1 - - [16/Feb/2025 18:41:42] "OPTIONS /api/aadhaar/verify-otp HTTP/1.1" 200 -
+2025-02-16 18:41:42,987 - INFO - Received request to verify Aadhaar OTP
+2025-02-16 18:41:42,989 - DEBUG - Verifying OTP for reference_id: 30749010
+2025-02-16 18:41:42,989 - DEBUG - Making API request to: https://api.sandbox.co.in/kyc/aadhaar/okyc/verify
+2025-02-16 18:41:42,990 - DEBUG - Request payload: {'@entity': 'in.co.sandbox.kyc.aadhaar.okyc.request', 'reference_id': 30749010, 'otp': '269339'}
+2025-02-16 18:41:42,991 - DEBUG - Headers generated: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0'}
+2025-02-16 18:41:42,998 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:41:44,058 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/verify HTTP/1.1" 400 485
+2025-02-16 18:41:44,060 - DEBUG - API Response Status: 400
+2025-02-16 18:41:44,061 - DEBUG - API Response: {'code': 400, 'message': "Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=60jbR2j36dLjUOZgvV0+il1hmMG3yBEl11s0a88c3b8=", 'timestamp': 1739711506465, 'transaction_id': '0b602b3f-0ccb-419e-9a42-3f4ad518eaab'}
+2025-02-16 18:41:44,062 - ERROR - API error: Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=60jbR2j36dLjUOZgvV0+il1hmMG3yBEl11s0a88c3b8=
+2025-02-16 18:41:44,066 - INFO - 127.0.0.1 - - [16/Feb/2025 18:41:44] "[31m[1mPOST /api/aadhaar/verify-otp HTTP/1.1[0m" 400 -
+2025-02-16 18:43:23,586 - INFO -  * Detected change in 'C:\\Users\\gurup\\Downloads\\StarTrek\\StarTrek-main\\Backend\\server.py', reloading
+2025-02-16 18:43:23,678 - INFO -  * Restarting with stat
+2025-02-16 18:43:24,151 - INFO - Environment variables loaded
+2025-02-16 18:43:24,154 - INFO - Starting Flask application
+2025-02-16 18:43:24,179 - WARNING -  * Debugger is active!
+2025-02-16 18:43:24,183 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:43:37,764 - INFO - 127.0.0.1 - - [16/Feb/2025 18:43:37] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:43:38,030 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:43:38,032 - DEBUG - Generated headers: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0', 'x-date': '20250216T131338Z', 'x-signature': 'zoMRTK6JzMjmQOaMuivk7jdI2zQR2fN3kMltUAcGLg4='}
+2025-02-16 18:43:38,045 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:43:39,339 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/otp HTTP/1.1" 403 152
+2025-02-16 18:43:39,340 - ERROR - API error: Invalid access token
+2025-02-16 18:43:39,344 - INFO - 127.0.0.1 - - [16/Feb/2025 18:43:39] "[31m[1mPOST /api/aadhaar/generate-otp HTTP/1.1[0m" 403 -
+2025-02-16 18:48:13,652 - INFO - 127.0.0.1 - - [16/Feb/2025 18:48:13] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:48:13,915 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:48:13,917 - DEBUG - Generated headers: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpNNE5EYzNMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekF5TkRjM2ZRLk1sZjdsWF80LUtvS3pRZjhLUFhWRkdPbWo2SU1vUnpvZXBacmJQNE45c0hsVkczU3VZal83cWtDZ1l3b0o1MjVDZjJrdkZVMmVKUUx0MFl1V29yek9nIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc4ODg3NywiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzAyNDc3fQ.ZzfiJ10layY-mGfVkOTs3_xvrNS32nMwH35zAHBhQRolt5OCwBRoEqw-3VNMXVWKCe8wZaTSOJD41_1cD5e4iw', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0', 'x-date': '20250216T131813Z', 'x-signature': 'euOIQ++ds0dXiiocdeSVZpd8jM0DbTv2HvJXuSi1iG4='}
+2025-02-16 18:48:13,922 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:48:26,220 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/otp HTTP/1.1" 403 152
+2025-02-16 18:48:26,221 - ERROR - API error: Invalid access token
+2025-02-16 18:48:26,225 - INFO - 127.0.0.1 - - [16/Feb/2025 18:48:26] "[31m[1mPOST /api/aadhaar/generate-otp HTTP/1.1[0m" 403 -
+2025-02-16 18:50:00,864 - INFO - Environment variables loaded
+2025-02-16 18:50:00,866 - INFO - Starting Flask application
+2025-02-16 18:50:12,970 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.5.229:5000
+2025-02-16 18:50:12,971 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 18:50:12,975 - INFO -  * Restarting with stat
+2025-02-16 18:50:13,706 - INFO - Environment variables loaded
+2025-02-16 18:50:13,709 - INFO - Starting Flask application
+2025-02-16 18:50:13,747 - WARNING -  * Debugger is active!
+2025-02-16 18:50:13,753 - INFO -  * Debugger PIN: 127-881-770
+2025-02-16 18:50:43,809 - INFO - 127.0.0.1 - - [16/Feb/2025 18:50:43] "OPTIONS /api/aadhaar/generate-otp HTTP/1.1" 200 -
+2025-02-16 18:50:44,059 - INFO - Received request to generate Aadhaar OTP
+2025-02-16 18:50:44,060 - DEBUG - Generated headers: {'accept': 'application/json', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoiZXlKaGJHY2lPaUpJVXpVeE1pSjkuZXlKaGRXUWlPaUpCVUVraUxDSnpkV0lpT2lKaFpHbDBlV0V1YTJGa2JHRm5Nak5BZG1sMExtVmtkU0lzSW1Gd2FWOXJaWGtpT2lKclpYbGZiR2wyWlY5SVVGZ3dOamQyZGpWblIzSmxOMGsxVWpsSFMyRndaelZqUmpGcmVuWXlaaUlzSW1semN5STZJbUZ3YVM1ellXNWtZbTk0TG1OdkxtbHVJaXdpWlhod0lqb3hOemN4TWpRM09UVTVMQ0pwYm5SbGJuUWlPaUpTUlVaU1JWTklYMVJQUzBWT0lpd2lhV0YwSWpveE56TTVOekV4T1RVNWZRLnZMS0x5OWJNQkZBODhNbm5FdkJQc05aUjZFWVI1VVRoQUtqYjRqS2UwQm5zSHhSZnJ2SUZSTnllaE1jYmpweWJmbTU2QzhpOFBONnlPSkJxTGFtbHRBIiwic3ViIjoiYWRpdHlhLmthZGxhZzIzQHZpdC5lZHUiLCJhcGlfa2V5Ijoia2V5X2xpdmVfSFBYMDY3dnY1Z0dyZTdJNVI5R0thcGc1Y0Yxa3p2MmYiLCJpc3MiOiJhcGkuc2FuZGJveC5jby5pbiIsImV4cCI6MTczOTc5ODM1OSwiaW50ZW50IjoiQUNDRVNTX1RPS0VOIiwiaWF0IjoxNzM5NzExOTU5fQ.j99JbA4DusDKHuzDeMJJ3oHK4t7fR4OXtJGc8h9h9eMFa7dPWd5pLU5qXg7Va0YXWgJjIstniNb3SO7P07p2UA', 'x-api-key': 'key_live_HPX067vv5gGre7I5R9GKapg5cF1kzv2f', 'x-api-version': '2.0', 'x-date': '20250216T132044Z', 'x-signature': 'yQvB6y/6ukENHb1XoXEQQb+sMgOn52oXGgWBF06nWK4='}
+2025-02-16 18:50:44,072 - DEBUG - Starting new HTTPS connection (1): api.sandbox.co.in:443
+2025-02-16 18:50:56,303 - DEBUG - https://api.sandbox.co.in:443 "POST /kyc/aadhaar/okyc/otp HTTP/1.1" 403 152
+2025-02-16 18:50:56,306 - ERROR - API error: Invalid access token
+2025-02-16 18:50:56,310 - INFO - 127.0.0.1 - - [16/Feb/2025 18:50:56] "[31m[1mPOST /api/aadhaar/generate-otp HTTP/1.1[0m" 403 -
